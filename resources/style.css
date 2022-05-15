@@ -112,7 +112,7 @@ html,body {
     display: flex;
     max-width: 1200px;
     min-height: 700px;
-    margin: 20px auto;
+    margin: 0 auto;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
