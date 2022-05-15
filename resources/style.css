@@ -111,10 +111,10 @@ html,body {
     padding-bottom: 10px;
     display: flex;
     max-width: 1200px;
-    min-height: 700px;
+    min-height: 500px;
     margin: 0 auto;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     background-image: 
         url(img-locations-background.jpg);
@@ -125,7 +125,8 @@ html,body {
 
 .location-background h2 {
     text-align: center;
-    margin-top: 60px;
+    margin-right: 120px;
+    maergin-left: 125;
 }
 
 .location {
@@ -133,9 +134,9 @@ html,body {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items:flex-end ;
+    align-items: center;
     gap: 2rem;
-    margin-right: 60px;
+    margin-bottom: 300px;
     
 }
 
