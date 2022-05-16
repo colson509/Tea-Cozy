@@ -1,55 +1,39 @@
-html,body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    color: seashell;
-    text-align: center;
-    opacity: 0.9;
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
-    background-color: black;
     box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-
 }
 
-.header {
-    position: fixed;
-    border-bottom: 1px solid seashell;
+body {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: black;
-    width: 100%;
-    min-height: 69px;
-}
-
-   
-
-#logo-image {
-  height:50px;
-  float: left;
-}
-
-.header ul {
-   text-align:center;
-   float: right;
-   margin: 0;
-}
-
-
-.header li {
-    display: inline-block;
-    list-style: none;
-    font-weight: 700;
-    padding: 1rem;
-}
-.header li a {
+    opacity: 0.9;
+    text-align: center;
     color: seashell;
 }
 
-.tea {
-    margin-top: 20px;
-    margin-bottom: 20px;
+header {
+    min-height: 69px;
+    border-bottom: 1px solid seashell;
 }
+#logo-image {
+    height: 50px;
+    float: left;
+    margin-left: 10px;
+}
+.list {
+    min-height: 69px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+    padding: 10px;
+    flex-wrap: wrap;
 
+}
 
 .banner {
     background-image: 
@@ -59,84 +43,81 @@ html,body {
      height: 100vh;
 
     display: flex;
-    max-width: 1200px;
+    flex-direction: column;
     min-height: 700px;
+    max-width: 1200px;
+    margin: 0 auto;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;  
-    margin: 0 auto; 
+
+
 }
-
-
 .mission {
     background-color: black;
-    display: inline-block; 
-    text-align: center;
-    max-height: 100vh;
-    width: 100%; 
+    line-height: 2.5;
 }
 
 
+.list a {
+    color: seashell;
+    text-align: center;
+}
+
+.tea {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 2;
+    max-width: 1000px ;
+}
+.img {
+    height: 200px;
+    width: 300px;
+}
+
 .spacer {
-    margin: 10px auto;
-    background-color: black;
+    margin: 0 auto;
     max-width: 1200px;
     min-height: 300px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    flex-wrap: wrap ;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    padding-top: 20px;
 }
 .first-child {
     display: inline-flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
-    align-items: flex-start;
-    align-content: center;
-}
-.img{
-    height: 200px;
-    width: 300px;
 }
 .col h4 {
-    margin-bottom: 10px;
-    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
 }
 
 .location-background {
-    opacity: 1;
     padding-bottom: 10px;
+    opacity: 1;
     display: flex;
-    max-width: 1200px;
-    min-height: 500px;
-    margin: 0 auto;
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    max-width: 1200px;
+    min-height: 500px;
+    margin: 10px auto 10px auto;
     background-image: 
         url(img-locations-background.jpg);
         background-position: center ;
         background-size: cover;
-        background-repeat: no-repeat;  
+        background-repeat: no-repeat;    
 }
 
-.location-background h2 {
-    text-align: center;
-    margin-right: 120px;
-    maergin-left: 125px;
-}
-
-.location {
-
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 300px;
+.location-background h2{
     
 }
 
@@ -144,17 +125,35 @@ html,body {
     width: 300px;
     height: 300px;
     background-color: black;
-    text-align: center;   
+    margin-bottom: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 3;
+
+} 
+
+.location {
+    margin: 0 auto;
+    display: inline-flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 }
 
-.contact {
-    display: inline-block;
-    margin: 0 auto;
-    text-align: center;
-}    
-     
+.contact{
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 3;
+}
+
 footer {
-    float: left;
+    text-align: left;
     margin-left: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
